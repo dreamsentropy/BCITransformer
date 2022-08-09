@@ -32,29 +32,21 @@ Please follow these following steps to run the code.
 Open [`generate_dataset.py`](https://github.com/skepsl/BCITransformer/blob/main/generate_dataset.py) code through the IDE.
 This code aims to download and generate the corresponding MI dataset for each subject. First, it will download raw datasets from MOABB and save it in the local directory. We suggest that the computer has at least 5GB free capacity to store all the dataset.
 
-To generate **Dataset I**, use:
+The argument for `dataset` is either `BCIC`, `PhysioNet`, `Cho`, `Lee`.
+
+Example to generate **Dataset I**, use:
 ```bash
 Dataset(dataset='BCIC').get_dataset()
 ```
 
-To generate **Dataset II**, use:
-```bash
-Dataset(dataset='PhysioNet').get_dataset()
-```
-
-To generate **Dataset III**, use:
-```bash
-Dataset(dataset='Cho').get_dataset()
-```
-
-To generate **Dataset IV**, use:
-```bash
-Dataset(dataset='Lee').get_dataset()
-```
-
 ### Training and Evaluation
 The code to train and evaluate the model is inside [`main.py`](https://github.com/skepsl/BCITransformer/blob/main/main.py). 
+The argument for `dataset` is either `BCIC`, `PhysioNet`, `Cho`, `Lee`. The fold is a number between 1-10. Hence, the subject is a number. 
 
+Example to  train **Dataset I**, use:
+```bash
+Dataset(dataset='BCIC').get_dataset()
+```
 
 ## Citation
 
