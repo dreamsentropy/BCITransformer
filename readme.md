@@ -68,6 +68,3 @@ The code to train and evaluate the model is inside [`main.py`](https://github.co
 ```
 
 
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
-
