@@ -1,5 +1,5 @@
 # Hierarchical Transformer for Brain Computer Interface
-This repository is the implementation of our paper entitled "Hierarchical Transformer Learning for Motor Imagery Classification Tasks"
+This repository is the implementation of our paper entitled "Hierarchical Transformer Learning for Motor Imagery Classification Tasks". Below image is an illustration of the model.
 
 ![Alt-Text](/images/model_with_bg.png)
 
