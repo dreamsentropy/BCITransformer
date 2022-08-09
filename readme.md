@@ -8,7 +8,7 @@ This repository is the implementation of our paper entitled "Hierarchical Transf
 
 ## Requirement
 
-Make sure you have 'python>=3.9' installed on the computer.
+Make sure you have `Python>=3.9` installed on the computer.
 
 Install MOABB library
 '''bash
