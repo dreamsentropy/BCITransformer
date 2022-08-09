@@ -43,9 +43,9 @@ Dataset(dataset='BCIC').get_dataset()
 The code to train and evaluate the model is inside [`main.py`](https://github.com/skepsl/BCITransformer/blob/main/main.py). 
 The argument for `dataset` is either `BCIC`, `PhysioNet`, `Cho`, `Lee`. The fold is a number between 1-10. Hence, the subject is a number. 
 
-Example to  train **Dataset I**, use:
+Example to  train **Dataset I**, **subject 1**, **fold 1**, use:
 ```bash
-Dataset(dataset='BCIC').get_dataset()
+train(dataset='BCIC', subject=1, fold=1) 
 ```
 
 ## Citation
