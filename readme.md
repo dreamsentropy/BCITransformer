@@ -1,6 +1,8 @@
 # Hierarchical Transformer for Brain Computer Interface
 This repository is the implementation of our paper entitled "Hierarchical Transformer Learning for Motor Imagery Classification Tasks"
 
+![Alt-Text](/images/model_with_bg.png)
+
 ## Requirement
 The environment to support the code is listed below:
 1. MOABB
