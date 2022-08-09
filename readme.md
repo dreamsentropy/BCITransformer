@@ -1,1 +1,1 @@
-<*GitHub Hates Empty Folder*>
+[![MIT License][license-shield]][license-url]
