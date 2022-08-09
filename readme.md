@@ -29,7 +29,7 @@ This code aims to generate the corresponding MI dataset for each subject. First,
 
 It runs a method ['Dataset'](https://github.com/skepsl/BCITransformer/blob/4e51a74c9b433997118ef717a74b01a6ba74926a/generate_dataset.py#L124) in 
 ```bash
-    dt = Dataset(dataset='BCIC')  # key: BCIC, PhysioNet, Cho, lee```
+dt = Dataset(dataset='BCIC')  # key: BCIC, PhysioNet, Cho, lee ```
 
 2. Run [`main.py`](https://github.com/skepsl/BCITransformer/blob/main/main.py)
 ## Citation
