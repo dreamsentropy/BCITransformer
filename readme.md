@@ -17,3 +17,6 @@ Please properly cite our work
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
+
+## Update History
+09 08 2022 - Initial Commit
