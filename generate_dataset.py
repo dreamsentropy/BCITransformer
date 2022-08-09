@@ -139,5 +139,4 @@ class Dataset:
 
 
 if __name__ == '__main__':
-    dt = Dataset(dataset='BCIC')  # key: BCIC, PhysioNet, Cho, lee
-    dt.get_dataset()
+    Dataset(dataset='BCIC').get_dataset() # key: BCIC, PhysioNet, Cho, lee
