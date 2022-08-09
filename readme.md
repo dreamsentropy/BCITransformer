@@ -25,7 +25,10 @@ The environment to support the code is listed below:
 ## Usage
 Please follow these following steps to run the code.
 1. Run [`generate_dataset.py`](https://github.com/skepsl/BCITransformer/blob/main/generate_dataset.py)
-This code aims to generate the corresponding MI dataset for each subject. First, it will download raw dataset from MOABB and save it in the local directory. We suggest that the computer has at least 5GB free capacity to store all the dataset. The function 
+This code aims to generate the corresponding MI dataset for each subject. First, it will download raw dataset from MOABB and save it in the local directory. We suggest that the computer has at least 5GB free capacity to store all the dataset.
+
+It runs a method ['Dataset'](https://github.com/skepsl/BCITransformer/blob/4e51a74c9b433997118ef717a74b01a6ba74926a/generate_dataset.py#L124) in 
+```bash ```
 
 2. Run [`main.py`](https://github.com/skepsl/BCITransformer/blob/main/main.py)
 ## Citation
