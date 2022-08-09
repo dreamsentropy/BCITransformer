@@ -1,10 +1,11 @@
 # Hierarchical Transformer for Brain Computer Interface
 
 **Update (2.8.2022)**: Initial code release
-**Update (9.8.2022)**: Update `generate_dataset.py` 
+
+**Update (9.8.2022)**: Update `generate_dataset.py` in handling dataset code and method definition.
 
 
-
+## Introduction
 This repository is the implementation of our paper entitled "Hierarchical Transformer Learning for Motor Imagery Classification Tasks". Below image is an illustration of the model.
 
 ![Alt-Text](/images/model_with_bg.png)
