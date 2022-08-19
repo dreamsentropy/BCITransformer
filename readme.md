@@ -9,26 +9,40 @@
 TBA
 
 ## Requirement
+### Environment
+Make sure you have `Python==3.9` installed on the computer.
 
-Make sure you have `Python>=3.9` installed on the computer.
-
-Install MOABB library
+### Installation
+1. [PyTorch](pytorch.org)
 ```bash
-pip install moabb
+conda install pytorch==1.11.0 torchvision==0.12.0 torchaudio==0.11.0 -c pytorch
 ```
 
-The environment to support the code is listed below:
-1. MOABB
-2. PyTorch
-3. Scipy
-4. Einops
-5. TQDM
+2. [MOABB](http://moabb.neurotechx.com/docs/generated/moabb.datasets.BNCI2014001.html)
+```bash
+pip install moabb==0.4.5
+```
+
+3. [SciPy](scikit-learn.org)
+```bash
+pip install scikit-learn==1.8.1
+```
+
+4. [Einops](https://pypi.org/project/einops/)
+```bash
+pip install einops==0.4.1
+```
+
+3. [tqdm](https://pypi.org/project/tqdm/)
+```bash
+pip install tqdm
+```
 
 ## Usage
 Please follow these following steps to run the code.
 ### Download Dataset
 Open [`generate_dataset.py`](https://github.com/skepsl/BCITransformer/blob/main/generate_dataset.py) code through the IDE.
-This code aims to download and generate the corresponding MI dataset for each subject. First, it will download raw datasets from MOABB and save it in the local directory. We suggest that the computer has at least 5GB free capacity to store all the dataset.
+This code aims to download and generate the corresponding MI dataset for each subject. First, it will download raw datasets from MOABB and save it in the local directory. We suggest that the computer has at least 5GB free capacity to store all original and preprocessed datasets.
 
 The argument for `dataset` is either `BCIC`, `PhysioNet`, `Cho`, `Lee`.
 
