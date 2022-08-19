@@ -64,7 +64,7 @@ train(dataset='BCIC', subject=1, fold=1)
 
 ```
 @article{tba2023,
-  title={To Be Announced},
+  title={BCI Transformer},
   author={TBA},
   journal={TBA},
   year={TBA}
