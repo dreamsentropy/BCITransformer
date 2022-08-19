@@ -178,11 +178,6 @@ class Head(nn.Module):
         self.mlp = nn.Linear(in_features=d_model, out_features=num_classes)
 
     def forward(self, x):
-        if self.mode == 'global':
-            x = x.mean(dim=1)
-        if self.mode == 'class':
-            x = self.norm(x)[:, 0]
-        x = self.mlp(x)
         return x
 
 
