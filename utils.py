@@ -70,6 +70,41 @@ class TenFCVDataset:
         self._test_idx = test_idx[self._fold]
         self._train_idx = np.array([e for e in data_idx if e not in self._test_idx])
 
+class LOSOCVDataset(Dataset):
+    def __init__(self, args, eval_subj_index):
+        super(LOSOCVDataset, self).__init__()
+        self.args = args
+        self.checker(eval_subj_index, self.args.subjects)
+        self.args.subjects.remove(eval_subj_index)
+
+        self._train_data = np.empty((0, self.args.window_len, self.args.eeg_ch))
+        self._train_label = np.empty((0,1))
+
+        for subject in self.args.subjects:
+            self._train_data = np.vstack((self._train_data, np.load(str(self.args.dataset_dir / ("subj_" + str(subject) + "_data.npy")))[:,:self.args.window_len,:]))
+            self._train_label = np.vstack((self._train_label, np.load(str(self.args.dataset_dir / ("subj_" + str(subject) + "_label.npy")))))
+
+        self._eval_data = np.load(str(self.args.dataset_dir / ("subj_" + str(eval_subj_index) + "_data.npy")))[:,:self.args.window_len,:]
+        self._eval_label = np.load(str(self.args.dataset_dir / ("subj_" + str(eval_subj_index) + "_label.npy")))
+
+    def get_eval_data_label(self):
+        return self._eval_data, self._eval_label
+
+    def __len__(self):
+        return self._train_data.shape[0]
+
+    def __getitem__(self, idx):
+        return self._train_data[idx], self._train_label[idx]
+
+    def checker(self, loso, subject):
+        try:
+            if loso in subject:
+                pass
+            else:
+                raise Exception(f'{loso} is invalid parameter')
+
+        except ValueError:
+            print("List does not contain value")
 
 class ArgCenter:
     def __init__(self, dataset):
