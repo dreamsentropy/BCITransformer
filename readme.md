@@ -54,7 +54,7 @@ Dataset(dataset='BCIC').get_dataset()
 
 ### Training and Evaluation
 The code to train and evaluate this paradigm is inside [`main.py`](https://github.com/skepsl/BCITransformer/blob/main/main.py). 
-The argument for `dataset` is either `BCIC`, `PhysioNet`, `Cho`, `Lee`. The fold is a number between 1-10. Hence, the subject is a subject ID. 
+The argument for `dataset` must be either `BCIC`, `PhysioNet`, `Cho`, or `Lee`. The fold must be an integer number between 1-10. The subject must be an integer represent the subject ID. 
 
 Example to  train with 10F-CV for **Dataset I**, **subject 1**, **fold 1**, use:
 ```bash
