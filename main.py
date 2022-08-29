@@ -56,4 +56,4 @@ def train_loso(dataset, eval_subj_index):
 
 if __name__ == '__main__':
     train_10f(dataset='BCIC', subject=1, fold=1)  # Key: BCIC, PhysioNet, Cho, Lee
-    # train_loso(dataset='BCIC', subject=1)  # Key: BCIC, PhysioNet, Cho, Lee
+    # train_loso(dataset='BCIC', eval_subj_index=1)  # Key: BCIC, PhysioNet, Cho, Lee
