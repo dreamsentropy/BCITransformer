@@ -57,7 +57,7 @@ The argument for `dataset` is either `BCIC`, `PhysioNet`, `Cho`, `Lee`. The fold
 
 Example to  train with 10F-CV for **Dataset I**, **subject 1**, **fold 1**, use:
 ```bash
-train(dataset='BCIC', subject=1, fold=1) 
+train_10f(dataset='BCIC', subject=1, fold=1) 
 ```
 
 Example to  train with LOSO-CV for **Dataset I**, **subject 1**, use:
