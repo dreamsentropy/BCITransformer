@@ -23,7 +23,7 @@ conda install pytorch==1.11.0 torchvision==0.12.0 torchaudio==0.11.0 -c pytorch
 ```bash
 pip install moabb==0.4.5
 ```
-Please note that this library will download the dataset from third party website.
+   Please note that this library will download the dataset from third party website.
 
 3. [SciPy](scikit-learn.org)
 ```bash
