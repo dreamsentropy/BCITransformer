@@ -51,13 +51,18 @@ Example to generate **Dataset I**, use:
 Dataset(dataset='BCIC').get_dataset()
 ```
 
-### Training and Evaluation #1
+### Training and Evaluation
 The code to train and evaluate this paradigm is inside [`main.py`](https://github.com/skepsl/BCITransformer/blob/main/main.py). 
 The argument for `dataset` is either `BCIC`, `PhysioNet`, `Cho`, `Lee`. The fold is a number between 1-10. Hence, the subject is a subject ID. 
 
-Example to  train **Dataset I**, **subject 1**, **fold 1**, use:
+Example to  train with 10F-CV for **Dataset I**, **subject 1**, **fold 1**, use:
 ```bash
-train(dataset='BCIC', subject=1, fold=1) 
+train_10f(dataset='BCIC', subject=1, fold=1) 
+```
+
+Example to  train with LOSO-CV for **Dataset I**, **subject 1**, use:
+```bash
+train_loso(dataset='BCIC', eval_subj_index=1)
 ```
 
 ## Citation
