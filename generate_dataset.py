@@ -20,7 +20,11 @@ class BCIC:
     def get_subject_data(self, subject):
         data, label, meta = self._paradigm.get_data(dataset=self._dataset, subjects=[subject])
         _, label = np.unique(label, return_inverse=True)
-        np.save(f'{self._parent_dir}/subj_{subject}_data', data.transpose((0,2,1)))
+        for i in range(data.shape[0]):
+            target_mean = np.mean(data[i])
+            target_std = np.std(data[i])
+            data[i] = (data[i] - target_mean) / target_std
+        np.save(f'{self._parent_dir}/subj_{subject}_data', data.transpose((0, 2, 1)))
         np.save(f'{self._parent_dir}/subj_{subject}_label', label[:, np.newaxis])
 
 
