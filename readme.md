@@ -6,6 +6,8 @@
 
 **Update (29.8.2022)**: Update `main.py` in handling two evaluation paradigms.
 
+**Update (05.9.2022)**: Update `generate_dataset.py` adding Channel Normalization
+
 ## Introduction
 TBA
 
